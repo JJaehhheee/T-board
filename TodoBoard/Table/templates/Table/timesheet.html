@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timesheet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="box white-box">
+            <img src="{% static 'floating2.png' %}" width="150px" height="150px">
+            <div class="name">Lee</div>
+            <ul class="custom-list">
+                <li>Todo Board</li>
+                <li>Time Sheet</li>
+            </ul>
+            <div class="foot">
+                <button class="login-button">
+                    로그인/로그아웃
+                </button>
+            </div>
+        </div>
+        <div class="box gray-box">
+            <div class="header-top">
+                <h1>Good Morning, Lee </h1>
+                
+            </div>
+            <div class="date-con">
+           
+                <div class="datebox">
+                    <div class="arrow left-arrow">
+                        <button class="arrow-button">&#8592;</button> <!-- Left arrow -->
+                    </div>
+                    2024 / 08 / 02 Fri
+                    <div class="arrow right-arrow">
+                        <button class="arrow-button">&#8594;</button> <!-- Right arrow -->
+                    </div>
+                </div>  
+            </div>
+            <div class="container2">
+                <div class="timebox">
+                    <div class="ck">
+                        <input type="checkbox">
+                        
+                        <span class="label">Running</span>
+                
+                        <div class="jump">
+                            <form>
+                                <p><input type="time" value="13:10:20" min="13:00:00" max="15:00:00"></p>
+                            </form> 
+                        </div>
+                        <div class="timedelete">...</div>
+                    </div>
+                </div>
+                <div class="timebox">
+                    <div class="ck">
+                        <input type="checkbox">
+                        
+                        <span class="label">Read a book</span>
+                        
+                        <div class="jump">
+                            <form>
+                                <p><input type="time" value="13:10:20" min="13:00:00" max="15:00:00"></p>
+                            </form>
+                         </div>
+                        <div class="timedelete">...</div>
+                    </div>
+                </div>
+                <div class="timebox">
+                    <div class="ck">
+                        <input type="checkbox">
+                        
+                        <span class="label">Take a shower</span>
+                        
+                        <div class="jump">
+                            <form>
+                                <p><input type="time" value="13:10:20" min="13:00:00" max="15:00:00"></p>
+                            </form>
+                        </div>
+                        <div class="timedelete">...</div>
+                    </div>
+                </div>
+                <div class="timebox">
+                    <div class="ck">
+                        <input type="checkbox">
+                        <span class="label">Cleaning the room</span>
+                        <div class="jump">
+                            <form>
+                                <p><input type="time" value="13:10:20" min="13:00:00" max="15:00:00"></p>
+                            </form>
+                        </div>
+                        <div class="timedelete">...</div>
+                    </div>
+                </div>
+                <div class="calendarcon">
+                    <div class="calendar">
+                        xx
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+</body>
+</html>
